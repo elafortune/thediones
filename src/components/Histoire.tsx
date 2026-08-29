@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 export default function Histoire() {
   return (
     <section id="histoire">
       <div className="wrap histoire">
         <div className="histoire-frame">
-          <span>Photo — Monsieur &amp; Madame Dione</span>
+          <Image
+            src="/images/the-diones-couple.jpg"
+            alt="Monsieur et Madame Dione"
+            fill
+            sizes="(max-width: 860px) 100vw, 45vw"
+            style={{ objectFit: "cover" }}
+          />
         </div>
         <div>
           <span className="eyebrow" style={{ color: "var(--forest)" }}>

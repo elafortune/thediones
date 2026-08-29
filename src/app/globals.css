@@ -327,24 +327,9 @@ section {
 .histoire-frame {
   aspect-ratio: 3 / 4;
   border-radius: 16px;
-  background: linear-gradient(155deg, var(--cream-deep), var(--bark) 160%);
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
-}
-
-.histoire-frame span {
-  position: absolute;
-  bottom: 18px;
-  left: 18px;
-  right: 18px;
-  color: var(--on-bark);
-  font-size: 12px;
-  font-weight: 700;
-  background: rgba(36, 26, 16, 0.35);
-  padding: 8px 12px;
-  border-radius: 999px;
-  text-align: center;
 }
 
 .pull {
