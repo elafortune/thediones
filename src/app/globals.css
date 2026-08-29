@@ -282,27 +282,7 @@ nav.links a:hover {
   border-radius: 18px;
   transform: rotate(3deg);
   box-shadow: var(--shadow);
-  display: flex;
-  align-items: flex-end;
-  padding: 24px;
-}
-
-.hero-frame::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  background-image: radial-gradient(circle at 25% 20%, rgba(255, 255, 255, 0.22), transparent 45%);
-}
-
-.frame-label {
-  position: relative;
-  color: #2c2109;
-  font-weight: 700;
-  font-size: 12.5px;
-  background: rgba(255, 252, 242, 0.55);
-  padding: 8px 14px;
-  border-radius: 999px;
+  overflow: hidden;
 }
 
 @media (max-width: 880px) {

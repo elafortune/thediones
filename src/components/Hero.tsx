@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="hero" id="top">
@@ -24,7 +26,14 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-frame">
-          <span className="frame-label">Photo du couple — emplacement</span>
+          <Image
+            src="/images/the-diones-couple.jpg"
+            alt="Monsieur et Madame Dione, conseillers conjugaux et familiaux"
+            fill
+            sizes="(max-width: 880px) 320px, 45vw"
+            style={{ objectFit: "cover" }}
+            priority
+          />
         </div>
       </div>
     </section>
