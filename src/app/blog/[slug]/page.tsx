@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ViewTransition } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles, getArticle } from "@/lib/articles";
@@ -51,42 +52,56 @@ export default async function ArticlePage({
 
   return (
     <main>
-      <article className="article-section">
-        <div className="wrap">
-          <Link href="/blog" className="article-back">
-            ← Le Journal
-          </Link>
-          <span
-            className="blog-card-cat"
-            style={{ color: categoryColors[article.category] ?? "var(--forest)" }}
-          >
-            {article.category}
-          </span>
-          <h1 className="article-title">{article.title}</h1>
-          <span className="blog-card-meta">
-            <span>{formatDate(article.date)}</span>
-            <span aria-hidden="true">·</span>
-            <span>{article.readTime} de lecture</span>
-          </span>
-
-          <div className="article-body">
-            {article.content.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
-          </div>
-
-          <div className="article-cta">
-            <h2>Envie d&apos;en parler à deux ?</h2>
-            <p className="lede">
-              Une séance permet de poser ce que vous vivez et de voir, ensemble,
-              ce qui peut être différent.
-            </p>
-            <Link className="btn btn-clay" href="/#seances">
-              Réserver une séance
+      <ViewTransition
+        enter={{
+          "nav-forward": "nav-forward",
+          "nav-back": "nav-back",
+          default: "none",
+        }}
+        exit={{
+          "nav-forward": "nav-forward",
+          "nav-back": "nav-back",
+          default: "none",
+        }}
+        default="none"
+      >
+        <article className="article-section">
+          <div className="wrap">
+            <Link href="/blog" className="article-back" transitionTypes={["nav-back"]}>
+              ← Le Journal
             </Link>
+            <span
+              className="blog-card-cat"
+              style={{ color: categoryColors[article.category] ?? "var(--forest)" }}
+            >
+              {article.category}
+            </span>
+            <h1 className="article-title">{article.title}</h1>
+            <span className="blog-card-meta">
+              <span>{formatDate(article.date)}</span>
+              <span aria-hidden="true">·</span>
+              <span>{article.readTime} de lecture</span>
+            </span>
+
+            <div className="article-body">
+              {article.content.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+
+            <div className="article-cta">
+              <h2>Envie d&apos;en parler à deux ?</h2>
+              <p className="lede">
+                Une séance permet de poser ce que vous vivez et de voir,
+                ensemble, ce qui peut être différent.
+              </p>
+              <Link className="btn btn-clay" href="/#seances">
+                Réserver une séance
+              </Link>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </ViewTransition>
     </main>
   );
 }

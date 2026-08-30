@@ -21,7 +21,9 @@ export default function Footer() {
                 <Link href="/#seances">Les séances</Link>
               </li>
               <li>
-                <Link href="/blog">Le Journal</Link>
+                <Link href="/blog" transitionTypes={["nav-forward"]}>
+                  Le Journal
+                </Link>
               </li>
               <li>
                 <a href="#">Le Guide du Couple</a>

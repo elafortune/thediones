@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const cards = [
   {
     href: "#seances",
@@ -12,6 +14,7 @@ const cards = [
     tag: "À lire",
     title: "Le Journal",
     desc: "Nos articles sur la vie de couple, la parentalité et les étapes qui traversent une famille.",
+    transitionTypes: ["nav-forward"],
   },
   {
     href: "#lettre",
@@ -41,13 +44,18 @@ export default function Univers() {
         </div>
         <div className="univers-grid">
           {cards.map((card) => (
-            <a key={card.title} className={`u-card ${card.className}`} href={card.href}>
+            <Link
+              key={card.title}
+              className={`u-card ${card.className}`}
+              href={card.href}
+              transitionTypes={card.transitionTypes}
+            >
               <div>
                 <span className="u-tag">{card.tag}</span>
                 <h3 style={{ marginTop: 10 }}>{card.title}</h3>
               </div>
               <p>{card.desc}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
