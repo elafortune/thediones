@@ -13,9 +13,21 @@ const quotes = [
   },
 ];
 
+function Stars() {
+  return (
+    <div className="stars" aria-label="Note de 5 sur 5 étoiles">
+      {Array.from({ length: 5 }).map((_, index) => (
+        <svg key={index} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.5l2.9 6.4 6.9.7-5.2 4.7 1.5 6.9L12 17.8l-6.1 3.4 1.5-6.9L2.2 9.6l6.9-.7L12 2.5z" />
+        </svg>
+      ))}
+    </div>
+  );
+}
+
 export default function Temoignages() {
   return (
-    <section>
+    <section id="temoignages">
       <div className="wrap">
         <div className="section-head center">
           <span className="eyebrow" style={{ color: "var(--forest)" }}>
@@ -26,6 +38,7 @@ export default function Temoignages() {
         <div className="proof-row">
           {quotes.map((quote) => (
             <div key={quote.name} className="proof-card">
+              <Stars />
               <p className="proof-quote">{quote.text}</p>
               <span className="proof-name">{quote.name}</span>
             </div>

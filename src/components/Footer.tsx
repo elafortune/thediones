@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
@@ -17,10 +18,10 @@ export default function Footer() {
             <h4>L&apos;univers</h4>
             <ul>
               <li>
-                <a href="#seances">Les séances</a>
+                <Link href="/#seances">Les séances</Link>
               </li>
               <li>
-                <a href="#">Le Journal</a>
+                <Link href="/blog">Le Journal</Link>
               </li>
               <li>
                 <a href="#">Le Guide du Couple</a>
@@ -31,7 +32,10 @@ export default function Footer() {
             <h4>Pratique</h4>
             <ul>
               <li>
-                <a href="#">Réserver une séance</a>
+                <Link href="/#seances">Réserver une séance</Link>
+              </li>
+              <li>
+                <Link href="/#faq">Foire aux questions</Link>
               </li>
               <li>
                 <a href="#">Nous trouver</a>

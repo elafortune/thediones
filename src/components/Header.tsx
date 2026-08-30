@@ -1,30 +1,31 @@
 import Link from "next/link";
 
 const links = [
-  { href: "#univers", label: "L'univers" },
-  { href: "#seances", label: "Séances" },
-  { href: "#histoire", label: "Notre histoire" },
-  { href: "#lettre", label: "La Lettre" },
+  { href: "/#univers", label: "L'univers" },
+  { href: "/#histoire", label: "Notre histoire" },
+  { href: "/#seances", label: "Séances" },
+  { href: "/#temoignages", label: "Témoignages/FAQ" },
+  { href: "/blog", label: "Notre journal" },
 ];
 
 export default function Header() {
   return (
     <header>
       <div className="wrap nav-row">
-        <Link className="logo" href="#top">
+        <Link className="logo" href="/#top">
           The Dione&apos;s
         </Link>
         <div className="nav-right">
           <nav className="links">
             {links.map((link) => (
-              <a key={link.href} href={link.href}>
+              <Link key={link.href} href={link.href}>
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
-          <a className="btn btn-clay" href="#seances" style={{ padding: "11px 22px" }}>
+          <Link className="btn btn-clay" href="/#seances" style={{ padding: "11px 22px" }}>
             Réserver
-          </a>
+          </Link>
         </div>
       </div>
     </header>

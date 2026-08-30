@@ -7,7 +7,7 @@ const cards = [
     desc: "Conseil conjugal, familial et individuel — en cabinet à Paris ou en visioconférence. Réservation et paiement en ligne.",
   },
   {
-    href: "#",
+    href: "/blog",
     className: "u-bark",
     tag: "À lire",
     title: "Le Journal",
