@@ -31,7 +31,7 @@ export default function Hero() {
             alt="Monsieur et Madame Dione, conseillers conjugaux et familiaux"
             fill
             sizes="(max-width: 880px) 320px, 45vw"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", objectPosition: "72% center" }}
             priority
           />
         </div>

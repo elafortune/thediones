@@ -6,8 +6,8 @@ export default function Histoire() {
       <div className="wrap histoire">
         <div className="histoire-frame">
           <Image
-            src="/images/the-diones-couple.jpg"
-            alt="Monsieur et Madame Dione"
+            src="/images/thediones-solo.jpeg"
+            alt="Madame Dione, conseillère conjugale et familiale"
             fill
             sizes="(max-width: 860px) 100vw, 45vw"
             style={{ objectFit: "cover" }}
