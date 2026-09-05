@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NewsletterForm from "./NewsletterForm";
+import { IconInstagram } from "./icons";
 
 export default function Footer() {
   return (
@@ -48,7 +49,15 @@ export default function Footer() {
             <h4>Suivez-nous</h4>
             <ul>
               <li>
-                <a href="#">Instagram</a>
+                <a
+                  className="foot-social-link"
+                  href="https://www.instagram.com/the.diones/?hl=fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconInstagram className="foot-social-icon" />
+                  Instagram
+                </a>
               </li>
               <li>
                 <a href="#">LinkedIn</a>

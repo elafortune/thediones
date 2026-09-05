@@ -39,6 +39,9 @@ yarn-error.log*
 # local dev server log
 .dev-server.log
 
+# raw video source (duplicated in public/videos, not versioned to avoid repo bloat)
+/video/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

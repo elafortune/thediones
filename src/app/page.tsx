@@ -7,6 +7,7 @@ import Seances from "@/components/Seances";
 import QuiSommesNous from "@/components/QuiSommesNous";
 import Temoignages from "@/components/Temoignages";
 import Faq from "@/components/Faq";
+import Videos from "@/components/Videos";
 import SectionDivider from "@/components/SectionDivider";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
         <SectionDivider />
         <Temoignages />
         <Faq />
+        <Videos />
       </ViewTransition>
     </main>
   );

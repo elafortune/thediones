@@ -173,6 +173,36 @@ export function IconFamily(props: IconProps) {
   );
 }
 
+/* --- social --- */
+
+export function IconInstagram(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4.2" />
+      <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function IconPlay(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <circle cx="12" cy="12" r="9.2" />
+      <path d="M10.2 8.6v6.8l5.6-3.4Z" fill="currentColor" stroke="currentColor" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function IconClose(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <line x1="6" y1="6" x2="18" y2="18" />
+      <line x1="18" y1="6" x2="6" y2="18" />
+    </svg>
+  );
+}
+
 /* --- ornament --- */
 
 export function IconSprig(props: IconProps) {
