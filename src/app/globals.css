@@ -420,6 +420,7 @@ nav.links a:hover {
   }
   .hero-frame {
     order: -1;
+    width: 100%;
     max-width: 320px;
     margin: 0 auto;
     transform: rotate(2deg);
