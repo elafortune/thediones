@@ -514,6 +514,18 @@ section {
   border-left-color: var(--clay);
 }
 
+.defis-icon {
+  width: 30px;
+  height: 30px;
+  color: var(--marigold);
+  margin-bottom: 14px;
+  transition: color 0.2s ease;
+}
+
+.defis-card:hover .defis-icon {
+  color: var(--clay);
+}
+
 .defis-card h3 {
   font-size: 1.15rem;
   color: var(--bark);
@@ -569,6 +581,31 @@ section {
   .defis-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 44px) 0;
+  color: var(--forest);
+  opacity: 0.55;
+}
+
+.section-divider-line {
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+.section-divider-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 /* univers strip */
@@ -675,6 +712,16 @@ section {
 .price-card.reco {
   border: 1.5px solid var(--clay);
   box-shadow: var(--shadow);
+}
+
+.price-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--forest);
+}
+
+.price-card.reco .price-icon {
+  color: var(--clay);
 }
 
 .price-tag {
@@ -872,6 +919,19 @@ section {
   align-items: center;
   gap: 16px;
   list-style: none;
+}
+
+.faq-summary-text {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.faq-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--marigold);
+  flex-shrink: 0;
 }
 
 .faq-item summary::-webkit-details-marker {

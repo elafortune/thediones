@@ -7,6 +7,7 @@ import Seances from "@/components/Seances";
 import QuiSommesNous from "@/components/QuiSommesNous";
 import Temoignages from "@/components/Temoignages";
 import Faq from "@/components/Faq";
+import SectionDivider from "@/components/SectionDivider";
 
 export default function Home() {
   return (
@@ -28,8 +29,11 @@ export default function Home() {
         <Histoire />
         <Defis />
         <Univers />
+        <SectionDivider />
         <Seances />
+        <SectionDivider />
         <QuiSommesNous />
+        <SectionDivider />
         <Temoignages />
         <Faq />
       </ViewTransition>

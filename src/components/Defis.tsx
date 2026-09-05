@@ -1,27 +1,42 @@
+import {
+  IconSilence,
+  IconCrackedHeart,
+  IconSeparateDoors,
+  IconUnevenScale,
+  IconWindingPath,
+  IconForkPath,
+} from "./icons";
+
 const defis = [
   {
     title: "On ne se parle plus, on se défend",
     desc: "Chaque discussion tourne au reproche, ou pire : à un mur de silence qui s'installe et dont on ne sait plus comment sortir.",
+    Icon: IconSilence,
   },
   {
     title: "La confiance a pris un coup",
     desc: "Une infidélité, un mensonge, un secret financier découvert : la base du lien a été fragilisée, et c'est difficile à réparer seul·e.",
+    Icon: IconCrackedHeart,
   },
   {
     title: "On vit comme des colocataires",
     desc: "Le quotidien a pris toute la place. La tendresse, le désir, l'attention à l'autre se sont effacés sans qu'on l'ait vraiment décidé.",
+    Icon: IconSeparateDoors,
   },
   {
     title: "La charge n'est plus équitable",
     desc: "Tâches, enfants, belle-famille, argent : un sentiment d'injustice s'est installé, et personne n'ose vraiment le nommer.",
+    Icon: IconUnevenScale,
   },
   {
     title: "La vie a basculé, pas vous deux ensemble",
     desc: "Un enfant qui arrive ou qui part, une reconversion, un déménagement : les grandes étapes ont creusé un décalage entre vous.",
+    Icon: IconWindingPath,
   },
   {
     title: "Réparer, ou se dire au revoir ?",
     desc: "Vous avez besoin d'un regard extérieur, neutre, pour savoir ce qui est encore possible — ou pour vous séparer plus sereinement.",
+    Icon: IconForkPath,
   },
 ];
 
@@ -44,6 +59,7 @@ export default function Defis() {
         <div className="defis-grid">
           {defis.map((item) => (
             <div className="defis-card" key={item.title}>
+              <item.Icon className="defis-icon" />
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
               <span className="defis-hint">Ça vous parle ? →</span>

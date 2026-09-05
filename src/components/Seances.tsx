@@ -1,3 +1,5 @@
+import { IconUserSolo, IconUserPair, IconFamily } from "./icons";
+
 const offers = [
   {
     tag: "Individuel",
@@ -6,6 +8,7 @@ const offers = [
     unit: "/ 60 min",
     desc: "Pour travailler seul·e sur vos schémas relationnels.",
     reco: false,
+    Icon: IconUserSolo,
   },
   {
     tag: "La plus demandée",
@@ -14,6 +17,7 @@ const offers = [
     unit: "/ 75 min",
     desc: "Un espace à deux pour se retrouver et sortir des mêmes conflits.",
     reco: true,
+    Icon: IconUserPair,
   },
   {
     tag: "Familial",
@@ -22,6 +26,7 @@ const offers = [
     unit: "/ 90 min",
     desc: "Pour apaiser et réorganiser les liens en famille.",
     reco: false,
+    Icon: IconFamily,
   },
 ];
 
@@ -41,6 +46,7 @@ export default function Seances() {
         <div className="pricing-grid">
           {offers.map((offer) => (
             <div key={offer.name} className={`price-card ${offer.reco ? "reco" : ""}`}>
+              <offer.Icon className="price-icon" />
               <span
                 className="price-tag"
                 style={
