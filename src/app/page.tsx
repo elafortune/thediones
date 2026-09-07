@@ -4,7 +4,6 @@ import Histoire from "@/components/Histoire";
 import Defis from "@/components/Defis";
 import Univers from "@/components/Univers";
 import Seances from "@/components/Seances";
-import QuiSommesNous from "@/components/QuiSommesNous";
 import Temoignages from "@/components/Temoignages";
 import Faq from "@/components/Faq";
 import Videos from "@/components/Videos";
@@ -32,8 +31,6 @@ export default function Home() {
         <Univers />
         <SectionDivider />
         <Seances />
-        <SectionDivider />
-        <QuiSommesNous />
         <SectionDivider />
         <Temoignages />
         <Faq />

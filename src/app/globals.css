@@ -589,18 +589,18 @@ section {
   align-items: center;
   justify-content: center;
   gap: 18px;
-  max-width: 220px;
+  max-width: 480px;
   margin: 0 auto;
   padding: clamp(28px, 4vw, 44px) 0;
   color: var(--forest);
-  opacity: 0.55;
+  opacity: 0.7;
 }
 
 .section-divider-line {
   flex: 1;
   height: 1px;
   background: currentColor;
-  opacity: 0.4;
+  opacity: 0.55;
 }
 
 .section-divider-icon {
@@ -768,63 +768,6 @@ section {
 
 @media (max-width: 880px) {
   .pricing-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* couple */
-.couple-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.couple-card {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.couple-portrait {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: linear-gradient(150deg, var(--marigold), var(--forest));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fffcf2;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 8px;
-  border: 3px solid var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.couple-card h3 {
-  color: var(--bark);
-}
-
-.couple-role {
-  font-size: 12.5px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--forest);
-}
-
-.couple-quote {
-  font-family: var(--font-fraunces), serif;
-  font-style: italic;
-  color: var(--ink-soft);
-  margin-top: 10px;
-  font-size: 1.05rem;
-}
-
-@media (max-width: 760px) {
-  .couple-grid {
     grid-template-columns: 1fr;
   }
 }
