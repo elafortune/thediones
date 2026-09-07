@@ -1,29 +1,10 @@
-const quotes = [
-  {
-    text: "« Un cabinet qui respire la vraie vie de couple, pas la théorie. On s'est sentis compris tout de suite. »",
-    name: "Exemple de témoignage — Camille & Yann",
-  },
-  {
-    text: "« La Lettre à elle seule vaut le détour. On la lit à deux, ça devient un rituel. »",
-    name: "Exemple de témoignage — Nadia & Karim",
-  },
-  {
-    text: "« Le duo a su parler à chacun de nous, sans prendre parti. On en ressort plus proches. »",
-    name: "Exemple de témoignage — Léa & Thomas",
-  },
-];
+import { reviews } from "@/lib/reviews";
+import { Stars } from "./icons";
+import ReviewsModal from "./ReviewsModal";
 
-function Stars() {
-  return (
-    <div className="stars" aria-label="Note de 5 sur 5 étoiles">
-      {Array.from({ length: 5 }).map((_, index) => (
-        <svg key={index} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 2.5l2.9 6.4 6.9.7-5.2 4.7 1.5 6.9L12 17.8l-6.1 3.4 1.5-6.9L2.2 9.6l6.9-.7L12 2.5z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
+const featured = reviews.filter((review) => review.featured);
+const rated = reviews.filter((review) => review.rating !== null);
+const average = rated.reduce((sum, review) => sum + (review.rating ?? 0), 0) / rated.length;
 
 export default function Temoignages() {
   return (
@@ -36,18 +17,23 @@ export default function Temoignages() {
           <h2>Ce qu&apos;ils en disent</h2>
         </div>
         <div className="proof-row">
-          {quotes.map((quote) => (
-            <div key={quote.name} className="proof-card">
-              <Stars />
-              <p className="proof-quote">{quote.text}</p>
-              <span className="proof-name">{quote.name}</span>
+          {featured.map((review) => (
+            <div key={review.id} className="proof-card">
+              <Stars count={review.rating ?? 5} />
+              <p className="proof-quote">« {review.text} »</p>
+              <span className="proof-name">
+                {review.author ?? "Avis Google"}
+              </span>
             </div>
           ))}
         </div>
-        <p className="placeholder-note">
-          Témoignages d&apos;exemple — à remplacer par vos avis clients réels
-          avant mise en ligne.
-        </p>
+
+        <div className="reviews-summary">
+          <span className="reviews-rating-badge">
+            {average.toFixed(1).replace(".", ",")} ★ · {rated.length} avis Google
+          </span>
+          <ReviewsModal reviews={reviews} />
+        </div>
       </div>
     </section>
   );

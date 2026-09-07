@@ -50,10 +50,10 @@ export default function Videos() {
       </div>
 
       {openIndex !== null && (
-        <div className="video-lightbox" onClick={() => setOpenIndex(null)}>
+        <div className="lightbox" onClick={() => setOpenIndex(null)}>
           <button
             type="button"
-            className="video-lightbox-close"
+            className="lightbox-close"
             aria-label="Fermer la vidéo"
             onClick={() => setOpenIndex(null)}
           >

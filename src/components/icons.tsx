@@ -173,6 +173,44 @@ export function IconFamily(props: IconProps) {
   );
 }
 
+/* --- reviews --- */
+
+export function IconHeart(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M12 20S3 14.3 3 8.3C3 5.4 5.4 3 8.3 3c1.6 0 2.9.8 3.7 2 .8-1.2 2.1-2 3.7-2C18.6 3 21 5.4 21 8.3 21 14.3 12 20 12 20Z" />
+    </svg>
+  );
+}
+
+export function IconChevronLeft(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M14.5 5 8 12l6.5 7" />
+    </svg>
+  );
+}
+
+export function IconChevronRight(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M9.5 5 16 12l-6.5 7" />
+    </svg>
+  );
+}
+
+export function Stars({ count = 5 }: { count?: number }) {
+  return (
+    <div className="stars" aria-label={`Note de ${count} sur 5 étoiles`}>
+      {Array.from({ length: count }).map((_, index) => (
+        <svg key={index} width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.5l2.9 6.4 6.9.7-5.2 4.7 1.5 6.9L12 17.8l-6.1 3.4 1.5-6.9L2.2 9.6l6.9-.7L12 2.5z" />
+        </svg>
+      ))}
+    </div>
+  );
+}
+
 /* --- social --- */
 
 export function IconInstagram(props: IconProps) {
