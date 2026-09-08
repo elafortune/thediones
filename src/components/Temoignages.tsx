@@ -8,7 +8,7 @@ const average = rated.reduce((sum, review) => sum + (review.rating ?? 0), 0) / r
 
 export default function Temoignages() {
   return (
-    <section id="temoignages">
+    <section id="temoignages" style={{ background: "var(--cream-deep)" }}>
       <div className="wrap">
         <div className="section-head center">
           <span className="eyebrow" style={{ color: "var(--forest)" }}>

@@ -1,11 +1,12 @@
+import Script from "next/script";
 import { IconUserSolo, IconUserPair, IconFamily } from "./icons";
+import CalendlyButton from "./CalendlyButton";
 
 const offers = [
   {
     tag: "Individuel",
     name: "Séance individuelle",
-    price: "70 €",
-    unit: "/ 60 min",
+    duration: "60 min",
     desc: "Pour travailler seul·e sur vos schémas relationnels.",
     reco: false,
     Icon: IconUserSolo,
@@ -13,8 +14,7 @@ const offers = [
   {
     tag: "La plus demandée",
     name: "Séance de couple",
-    price: "90 €",
-    unit: "/ 75 min",
+    duration: "75 min",
     desc: "Un espace à deux pour se retrouver et sortir des mêmes conflits.",
     reco: true,
     Icon: IconUserPair,
@@ -22,8 +22,7 @@ const offers = [
   {
     tag: "Familial",
     name: "Séance familiale",
-    price: "120 €",
-    unit: "/ 90 min",
+    duration: "90 min",
     desc: "Pour apaiser et réorganiser les liens en famille.",
     reco: false,
     Icon: IconFamily,
@@ -33,6 +32,8 @@ const offers = [
 export default function Seances() {
   return (
     <section id="seances">
+      <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
       <div className="wrap">
         <div className="section-head center">
           <span className="eyebrow" style={{ color: "var(--forest)" }}>
@@ -58,19 +59,14 @@ export default function Seances() {
                 {offer.tag}
               </span>
               <span className="price-name">{offer.name}</span>
-              <span className="price-amount">
-                {offer.price} <sub>{offer.unit}</sub>
-              </span>
+              <span className="price-amount">{offer.duration}</span>
               <p className="price-desc">{offer.desc}</p>
-              <a className={offer.reco ? "btn btn-clay" : "btn btn-outline"} href="#">
+              <CalendlyButton className={offer.reco ? "btn btn-clay" : "btn btn-outline"}>
                 Réserver
-              </a>
+              </CalendlyButton>
             </div>
           ))}
         </div>
-        <p className="placeholder-note">
-          Tarifs indicatifs — à confirmer avant mise en ligne.
-        </p>
       </div>
     </section>
   );
