@@ -31,7 +31,7 @@ export default function Histoire() {
             couple parfait sur papier glacé : être en couple aujourd&apos;hui
             demande un travail que nos parents n&apos;ont pas eu à faire de la
             même façon. Nous le savons parce que nous l&apos;avons vécu, avant
-            même de l&apos;accompagner chez les autres — avec nos propres
+            même de l&apos;accompagner chez les autres, avec nos propres
             désaccords, nos propres silences, nos propres recommencements.
             C&apos;est cette traversée qui nous a menés vers le conseil
             conjugal et familial, et qui nourrit aujourd&apos;hui chaque

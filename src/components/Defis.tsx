@@ -35,7 +35,7 @@ const defis = [
   },
   {
     title: "Réparer, ou se dire au revoir ?",
-    desc: "Vous avez besoin d'un regard extérieur, neutre, pour savoir ce qui est encore possible — ou pour vous séparer plus sereinement.",
+    desc: "Vous avez besoin d'un regard extérieur, neutre, pour savoir ce qui est encore possible ou pour vous séparer plus sereinement.",
     Icon: IconForkPath,
   },
 ];
@@ -51,7 +51,7 @@ export default function Defis() {
           <h2>Ce que beaucoup de couples n&apos;osent pas dire</h2>
           <p className="lede defis-lede">
             Nous ne recevons pas que des couples en crise ouverte. Voici ce
-            que nous entendons le plus souvent, sous des formes différentes —
+            que nous entendons le plus souvent, sous des formes différentes,
             peut-être reconnaîtrez-vous une part de votre histoire.
           </p>
         </div>

@@ -13,7 +13,7 @@ export const articles: Article[] = [
     slug: "sortir-des-disputes-qui-reviennent",
     title: "Sortir des disputes qui reviennent toujours",
     excerpt:
-      "Le même sujet, le même ton, la même impasse. Pourquoi les couples rejouent-ils sans cesse la même scène — et comment en sortir ?",
+      "Le même sujet, le même ton, la même impasse. Pourquoi les couples rejouent-ils sans cesse la même scène et comment en sortir ?",
     category: "Communication",
     date: "2026-08-10",
     readTime: "5 min",
@@ -46,7 +46,7 @@ export const articles: Article[] = [
     slug: "reconnaitre-la-distance-qui-sinstalle",
     title: "Reconnaître la distance qui s'installe",
     excerpt:
-      "Pas de crise, pas de dispute — juste un éloignement discret. Ces signaux méritent d'être écoutés avant qu'ils ne s'aggravent.",
+      "Pas de crise, pas de dispute juste un éloignement discret. Ces signaux méritent d'être écoutés avant qu'ils ne s'aggravent.",
     category: "Vie de couple",
     date: "2026-06-30",
     readTime: "4 min",

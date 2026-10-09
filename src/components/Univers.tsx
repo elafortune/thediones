@@ -6,7 +6,7 @@ const cards = [
     className: "u-forest",
     tag: "Le cœur du cabinet",
     title: "Les séances",
-    desc: "Conseil conjugal, familial et individuel — en cabinet à Paris ou en visioconférence. Réservation et paiement en ligne.",
+    desc: "Conseil conjugal, familial et individuel en cabinet ou en visioconférence. Réservation et paiement en ligne.",
   },
   {
     href: "/blog",
