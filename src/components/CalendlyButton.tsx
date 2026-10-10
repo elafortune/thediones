@@ -12,15 +12,18 @@ const CALENDLY_URL = "https://calendly.com/thediones/thedionesconseilconjugaletf
 
 export default function CalendlyButton({
   className,
+  style,
   children,
 }: {
   className?: string;
+  style?: React.CSSProperties;
   children: React.ReactNode;
 }) {
   return (
     <button
       type="button"
       className={className}
+      style={style}
       onClick={() => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })}
     >
       {children}

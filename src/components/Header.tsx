@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { navLinks } from "@/lib/nav";
 import MobileNav from "./MobileNav";
+import CalendlyButton from "./CalendlyButton";
 
 export default function Header() {
   return (
@@ -17,9 +18,9 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-          <Link className="btn btn-clay" href="/#seances" style={{ padding: "11px 22px" }}>
+          <CalendlyButton className="btn btn-clay" style={{ padding: "11px 22px" }}>
             Réserver
-          </Link>
+          </CalendlyButton>
           <MobileNav />
         </div>
       </div>

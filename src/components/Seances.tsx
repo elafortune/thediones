@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { IconUserSolo, IconUserPair, IconFamily } from "./icons";
 import CalendlyButton from "./CalendlyButton";
 
@@ -32,8 +31,6 @@ const offers = [
 export default function Seances() {
   return (
     <section id="seances">
-      <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
-      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
       <div className="wrap">
         <div className="section-head center">
           <span className="eyebrow" style={{ color: "var(--forest)" }}>

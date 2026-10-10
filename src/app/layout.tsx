@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Fraunces, Karla } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -29,6 +30,8 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${fraunces.variable} ${karla.variable}`}>
       <body>
+        <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+        <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
         <Header />
         {children}
         <Footer />
