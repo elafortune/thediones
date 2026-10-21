@@ -368,19 +368,38 @@ nav.links a:hover {
 
 /* hero */
 .hero {
-  background: linear-gradient(150deg, var(--forest-ink) 0%, var(--forest) 120%);
   color: var(--on-forest);
   padding: clamp(56px, 9vw, 108px) 0 clamp(70px, 9vw, 120px);
+  min-height: clamp(520px, 72vh, 760px);
+  display: flex;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: clamp(30px, 6vw, 70px);
-  align-items: center;
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(28, 56, 8, 0.93) 0%,
+    rgba(28, 56, 8, 0.8) 34%,
+    rgba(28, 56, 8, 0.4) 62%,
+    rgba(28, 56, 8, 0.12) 100%
+  );
+}
+
+.hero-content {
   position: relative;
+  z-index: 1;
+  max-width: 640px;
 }
 
 .hero-eyebrow {
@@ -402,29 +421,6 @@ nav.links a:hover {
   gap: 14px;
   flex-wrap: wrap;
   margin-top: 26px;
-}
-
-.hero-frame {
-  position: relative;
-  aspect-ratio: 4 / 5;
-  background: linear-gradient(160deg, var(--marigold) 0%, var(--clay) 100%);
-  border-radius: 18px;
-  transform: rotate(3deg);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-@media (max-width: 880px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero-frame {
-    order: -1;
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    transform: rotate(2deg);
-  }
 }
 
 section {
@@ -1040,9 +1036,39 @@ section {
   margin-top: clamp(28px, 4vw, 40px);
 }
 
-.reviews-rating-badge {
-  font-size: 14px;
-  font-weight: 700;
+.reviews-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.reviews-score-number {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(2.2rem, 5vw, 2.8rem);
+  font-weight: 600;
+  color: var(--bark);
+  line-height: 1;
+}
+
+.reviews-score .stars {
+  font-size: 20px;
+}
+
+.reviews-score-divider {
+  width: 1px;
+  height: 28px;
+  background: var(--line);
+}
+
+.reviews-score-google {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--ink-soft);
 }
 

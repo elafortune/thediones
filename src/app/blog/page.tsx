@@ -45,6 +45,9 @@ export default function BlogIndex() {
               Le Journal
             </span>
             <h1 style={{ marginTop: 14 }}>Le Journal des Dione&apos;s</h1>
+            <p className="pull">
+              « Des réflexions à partager, des questions à explorer. »
+            </p>
             <p className="lede" style={{ marginTop: 16, maxWidth: "56ch" }}>
               Des repères et des réflexions sur la vie de couple et de
               famille, écrits avec le même regard que celui que nous portons

@@ -9,33 +9,33 @@ import {
 
 const defis = [
   {
-    title: "On ne se parle plus, on se défend",
-    desc: "Chaque discussion tourne au reproche, ou pire : à un mur de silence qui s'installe et dont on ne sait plus comment sortir.",
+    title: "Vous avez du mal à trouver votre place dans vos relations.",
+    desc: "Vous vous interrogez sur la place que vous occupez auprès de l'autre (des autres), sur vos besoins, vos limites et sur la manière de les faire exister dans vos relations.",
     Icon: IconSilence,
   },
   {
-    title: "La confiance a pris un coup",
-    desc: "Une infidélité, un mensonge, un secret financier découvert : la base du lien a été fragilisée, et c'est difficile à réparer seul·e.",
+    title: "Vous vous aimez, mais vous ne vous comprenez plus.",
+    desc: "Les discussions tournent en rond, les malentendus s'accumulent ou le silence s'est installé. Vous avez le sentiment de ne plus réussir à vous entendre.",
     Icon: IconCrackedHeart,
   },
   {
-    title: "On vit comme des colocataires",
-    desc: "Le quotidien a pris toute la place. La tendresse, le désir, l'attention à l'autre se sont effacés sans qu'on l'ait vraiment décidé.",
+    title: "Vous êtes face à un choix important.",
+    desc: "Rester, partir, vous engager, prendre de la distance, poser des limites… Vous souhaitez prendre le temps de réfléchir aux différentes possibilités avant de faire votre choix.",
     Icon: IconSeparateDoors,
   },
   {
-    title: "La charge n'est plus équitable",
-    desc: "Tâches, enfants, belle-famille, argent : un sentiment d'injustice s'est installé, et personne n'ose vraiment le nommer.",
+    title: "Vous vous interrogez sur vos relations familiales.",
+    desc: "Des attentes différentes, des incompréhensions, des tensions ou des non-dits… Vous souhaitez prendre du recul sur certaines relations et réfléchir à la place que vous souhaitez leur donner dans votre vie.",
     Icon: IconUnevenScale,
   },
   {
-    title: "La vie a basculé, pas vous deux ensemble",
-    desc: "Un enfant qui arrive ou qui part, une reconversion, un déménagement : les grandes étapes ont creusé un décalage entre vous.",
+    title: "Vous avez l'impression de revivre les mêmes histoires.",
+    desc: "Dans vos relations amoureuses, familiales ou amicales, certaines situations semblent se répéter. Vous aimeriez prendre du recul sur ces expériences et comprendre ce qui s'y joue ou se rejoue.",
     Icon: IconWindingPath,
   },
   {
-    title: "Réparer, ou se dire au revoir ?",
-    desc: "Vous avez besoin d'un regard extérieur, neutre, pour savoir ce qui est encore possible ou pour vous séparer plus sereinement.",
+    title: "Vous avez besoin d'un espace pour faire le point.",
+    desc: "Vous ne traversez pas nécessairement une crise et n'avez pas forcément de grandes décisions à prendre. Vous souhaitez simplement parler de vos relations, partager vos questionnements et prendre du recul...",
     Icon: IconForkPath,
   },
 ];
@@ -69,11 +69,11 @@ export default function Defis() {
 
         <div className="defis-cta">
           <p>
-            Aucune de ces situations n&apos;est une fatalité. C&apos;est
-            précisément pour ça que nous existons.
+            Pas besoin d&apos;attendre que tout déborde pour prendre le temps
+            d&apos;en parler.
           </p>
           <a className="btn btn-clay" href="#seances">
-            Voir comment nous pouvons vous aider
+            Découvrir nos accompagnements
           </a>
         </div>
       </div>

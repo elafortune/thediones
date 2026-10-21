@@ -1,5 +1,5 @@
 import { reviews } from "@/lib/reviews";
-import { Stars } from "./icons";
+import { IconGoogle, Stars } from "./icons";
 import ReviewsModal from "./ReviewsModal";
 
 const featured = reviews.filter((review) => review.featured);
@@ -12,9 +12,20 @@ export default function Temoignages() {
       <div className="wrap">
         <div className="section-head center">
           <span className="eyebrow" style={{ color: "var(--forest)" }}>
-            La communauté
+            Témoignages
           </span>
-          <h2>Ce qu&apos;ils en disent</h2>
+          <h2>Ils sont passés par la Maison</h2>
+          <div className="reviews-score">
+            <span className="reviews-score-number">
+              {average.toFixed(1).replace(".", ",")}/5
+            </span>
+            <Stars count={Math.round(average)} />
+            <span className="reviews-score-divider" aria-hidden="true" />
+            <span className="reviews-score-google">
+              <IconGoogle width={20} height={20} />
+              Avis Google
+            </span>
+          </div>
         </div>
         <div className="proof-row">
           {featured.map((review) => (
@@ -29,9 +40,6 @@ export default function Temoignages() {
         </div>
 
         <div className="reviews-summary">
-          <span className="reviews-rating-badge">
-            {average.toFixed(1).replace(".", ",")} ★ · {rated.length} avis Google
-          </span>
           <ReviewsModal reviews={reviews} />
         </div>
       </div>

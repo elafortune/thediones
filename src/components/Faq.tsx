@@ -1,41 +1,41 @@
 import {
-  IconQuestion,
-  IconClock,
-  IconScreen,
-  IconLock,
   IconCalendarCheck,
+  IconUserSolo,
+  IconScreen,
+  IconClock,
+  IconQuestion,
 } from "./icons";
 
 const faqs = [
   {
-    question: "Comment savoir si un accompagnement est fait pour nous ?",
+    question: "Comment se déroule une première consultation ?",
     answer:
-      "Si vous ressentez de la distance, des conflits qui reviennent ou simplement l'envie de faire le point à deux, une première séance permet de clarifier ensemble votre demande et le cadre le plus adapté. Consulter n'est pas réservé aux périodes de crise.",
-    Icon: IconQuestion,
+      "La première consultation dure 2 heures. Je prends le temps de comprendre votre demande, votre histoire et vos objectifs, pour définir ensemble le rythme et la formule les plus adaptés à votre situation.",
+    Icon: IconCalendarCheck,
   },
   {
-    question: "Combien de temps dure un accompagnement ?",
+    question: "Puis-je consulter seul(e), même si ma difficulté concerne mon couple ?",
     answer:
-      "Cela dépend de votre situation : certains couples avancent en quelques séances, d'autres préfèrent un suivi plus long, à raison d'une séance toutes les deux à trois semaines. Nous en discutons ensemble dès le premier échange.",
-    Icon: IconClock,
+      "Bien sûr. Il n'est pas nécessaire de venir à deux pour parler de son couple. La dynamique d'un couple peut évoluer sous l'effet des changements de l'un, de l'autre ou des deux partenaires.",
+    Icon: IconUserSolo,
   },
   {
-    question: "Les séances se passent-elles en cabinet ou en visio ?",
+    question: "Les consultations ont-elles lieu en visioconférence ou en présentiel ?",
     answer:
-      "Les deux formats sont possibles et ont la même valeur. Vous choisissez librement au moment de la réservation, et pouvez alterner selon vos disponibilités.",
+      "Les consultations se déroulent généralement en visioconférence afin de vous permettre d'échanger depuis le lieu de votre choix, sans pression logistique et en toute confidentialité. Cependant, le présentiel reste possible sur demande et selon la distance.",
     Icon: IconScreen,
   },
   {
-    question: "Est-ce confidentiel ?",
+    question: "Comment fonctionne l'accompagnement de 10 heures ?",
     answer:
-      "Oui. Nous sommes tenus au secret professionnel, comme l'ensemble des conseillers conjugaux et familiaux formés et certifiés.",
-    Icon: IconLock,
+      "Cet accompagnement plus long vous permet de prendre le temps d'approfondir vos questionnements, à votre rythme sur une période de trois mois. Cette formule est proposée à l'issue d'une première consultation, après avoir échangé sur votre situation et vos attentes.",
+    Icon: IconClock,
   },
   {
-    question: "Comment se déroule la première séance ?",
+    question: "Comment prendre ou modifier un rendez-vous ?",
     answer:
-      "Nous prenons le temps de comprendre votre demande, votre histoire et vos objectifs, pour définir ensemble le rythme et la formule les plus adaptés à votre situation.",
-    Icon: IconCalendarCheck,
+      "Vous pouvez prendre rendez-vous directement depuis notre site, en consultant les créneaux disponibles et en choisissant celui qui vous convient. Le règlement s'effectue en ligne, au moment de la réservation.",
+    Icon: IconQuestion,
   },
 ];
 
