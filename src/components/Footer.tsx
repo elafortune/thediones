@@ -1,5 +1,4 @@
 import Link from "next/link";
-import NewsletterForm from "./NewsletterForm";
 import { IconInstagram } from "./icons";
 
 export default function Footer() {
@@ -11,10 +10,6 @@ export default function Footer() {
           Dione&apos;s. »
         </p>
         <div className="foot-grid">
-          <div>
-            <h4>La Lettre des Dione&apos;s</h4>
-            <NewsletterForm />
-          </div>
           <div>
             <h4>L&apos;univers</h4>
             <ul>

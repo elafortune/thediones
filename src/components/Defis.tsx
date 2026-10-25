@@ -45,7 +45,7 @@ export default function Defis() {
     <section className="defis-section" id="defis">
       <div className="wrap">
         <div className="section-head center">
-          <span className="eyebrow" style={{ color: "var(--marigold)" }}>
+          <span className="eyebrow" style={{ color: "#e0a81f" }}>
             Vous vous reconnaissez peut-être
           </span>
           <h2>Ce que beaucoup de couples n&apos;osent pas dire</h2>
