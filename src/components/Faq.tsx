@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   IconCalendarCheck,
   IconUserSolo,
@@ -33,8 +34,17 @@ const faqs = [
   },
   {
     question: "Comment prendre ou modifier un rendez-vous ?",
-    answer:
-      "Vous pouvez prendre rendez-vous directement depuis notre site, en consultant les créneaux disponibles et en choisissant celui qui vous convient. Le règlement s'effectue en ligne, au moment de la réservation.",
+    answer: (
+      <>
+        Vous pouvez prendre{" "}
+        <Link href="/reservation" className="faq-inline-link">
+          rendez-vous
+        </Link>{" "}
+        directement depuis notre site, en consultant les créneaux disponibles
+        et en choisissant celui qui vous convient. Le règlement s&apos;effectue
+        en ligne, au moment de la réservation.
+      </>
+    ),
     Icon: IconQuestion,
   },
 ];

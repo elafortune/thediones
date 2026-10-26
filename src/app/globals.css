@@ -496,23 +496,6 @@ section {
   color: var(--ink-soft);
 }
 
-.defis-hint {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 12.5px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--clay);
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.defis-card:hover .defis-hint {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .defis-cta {
   margin-top: clamp(40px, 6vw, 60px);
   display: flex;
@@ -570,8 +553,10 @@ section {
 /* univers strip */
 .univers-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 .u-card {
@@ -639,13 +624,7 @@ section {
   opacity: 0.85;
 }
 
-@media (max-width: 1000px) {
-  .univers-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 620px) {
+@media (max-width: 860px) {
   .univers-grid {
     grid-template-columns: 1fr;
   }
@@ -887,6 +866,13 @@ section {
 
 .faq-contact .btn {
   margin-top: 18px;
+}
+
+.faq-inline-link {
+  color: var(--clay);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* videos */

@@ -21,7 +21,7 @@ export default function ReviewsModal({ reviews }: { reviews: Review[] }) {
   return (
     <>
       <button type="button" className="reviews-more" onClick={() => setIndex(0)}>
-        Voir les {reviews.length} témoignages →
+        Voir tous les témoignages →
       </button>
 
       {index !== null && (

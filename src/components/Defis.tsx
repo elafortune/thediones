@@ -62,7 +62,6 @@ export default function Defis() {
               <item.Icon className="defis-icon" />
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
-              <span className="defis-hint">Ça vous parle ? →</span>
             </div>
           ))}
         </div>

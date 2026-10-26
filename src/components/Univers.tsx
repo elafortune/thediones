@@ -6,14 +6,14 @@ const cards = [
     className: "u-forest",
     tag: "Le cœur du cabinet",
     title: "Les séances",
-    desc: "Conseil conjugal, familial et individuel en cabinet ou en visioconférence. Réservation et paiement en ligne.",
+    desc: "Conseil conjugal, familial et individuel en visioconférence. Consultation en présentiel possible. Réservation et paiement en ligne.",
   },
   {
     href: "/blog",
     className: "u-bark",
     tag: "À lire",
     title: "Le Journal",
-    desc: "Nos articles sur la vie de couple, la parentalité et les étapes qui traversent une famille.",
+    desc: "Nos articles sur la vie affective, relationnelle et sexuelle. La parentalité, la vie de couple et de famille, l'amitié ou encore les relations professionnelles, on parle des liens entre humains.",
     transitionTypes: ["nav-forward"],
   },
   {
@@ -21,14 +21,7 @@ const cards = [
     className: "u-marigold",
     tag: "Une fois par mois",
     title: "La Lettre des Dione's",
-    desc: "Un repère, un outil ou une question à se poser à deux, reçue directement par email.",
-  },
-  {
-    href: "#",
-    className: "u-clay",
-    tag: "Bientôt disponible",
-    title: "Le Guide du Couple",
-    desc: "Un carnet à remplir à deux, pensé avec nous pour prolonger le travail fait en séance.",
+    desc: "Chaque mois une lettre pour partager une réflexion, une expérience personnelle ou une question autour du couple, de la famille et des relations humaines.",
   },
 ];
 
