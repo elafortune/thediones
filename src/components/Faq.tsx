@@ -62,6 +62,23 @@ export default function Faq() {
             </details>
           ))}
         </div>
+
+        <div className="faq-contact">
+          <p className="faq-contact-title">Une question ? Écrivez-nous.</p>
+          <p className="faq-contact-desc">
+            Vous n&apos;avez pas trouvé la réponse à votre question ? Vous
+            souhaitez obtenir une précision avant de prendre rendez-vous ?
+            Nous sommes à votre écoute.
+          </p>
+          <a
+            className="btn btn-outline"
+            href="https://www.instagram.com/the.diones/?hl=fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nous contacter
+          </a>
+        </div>
       </div>
     </section>
   );

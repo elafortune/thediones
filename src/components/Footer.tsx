@@ -11,10 +11,16 @@ export default function Footer() {
         </p>
         <div className="foot-grid">
           <div>
-            <h4>L&apos;univers</h4>
+            <h4>Navigation</h4>
             <ul>
               <li>
-                <Link href="/#seances">Les séances</Link>
+                <Link href="/#top">Bienvenue</Link>
+              </li>
+              <li>
+                <Link href="/#histoire">La Maison</Link>
+              </li>
+              <li>
+                <Link href="/#seances">Nos accompagnements</Link>
               </li>
               <li>
                 <Link href="/blog" transitionTypes={["nav-forward"]}>
@@ -22,26 +28,38 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#">Le Guide du Couple</a>
+                <a
+                  href="https://www.instagram.com/the.diones/?hl=fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pratique</h4>
+            <h4>Liens utiles</h4>
             <ul>
               <li>
-                <Link href="/#seances">Réserver une séance</Link>
+                <Link href="/reservation">Prendre rendez-vous</Link>
               </li>
               <li>
-                <Link href="/#faq">Foire aux questions</Link>
+                <Link href="/#faq">FAQ</Link>
               </li>
               <li>
-                <a href="#">Nous trouver</a>
+                <a href="#">Mentions légales</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+              <li>
+                <a href="#">CGV</a>
               </li>
             </ul>
           </div>
           <div>
-            <h4>Suivez-nous</h4>
+            <h4>Réseaux sociaux</h4>
             <ul>
               <li>
                 <a
@@ -61,8 +79,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span>© The Dione&apos;s — Conseillers conjugaux et familiaux</span>
-          <span>Mentions légales · Confidentialité</span>
+          <span>© 2026 The Dione&apos;s. Tous droits réservés.</span>
         </div>
       </div>
     </footer>

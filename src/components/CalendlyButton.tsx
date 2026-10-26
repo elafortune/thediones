@@ -1,14 +1,4 @@
-"use client";
-
-declare global {
-  interface Window {
-    Calendly?: {
-      initPopupWidget: (options: { url: string }) => void;
-    };
-  }
-}
-
-const CALENDLY_URL = "https://calendly.com/thediones/thedionesconseilconjugaletfamilial";
+import Link from "next/link";
 
 export default function CalendlyButton({
   className,
@@ -20,13 +10,8 @@ export default function CalendlyButton({
   children: React.ReactNode;
 }) {
   return (
-    <button
-      type="button"
-      className={className}
-      style={style}
-      onClick={() => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })}
-    >
+    <Link className={className} style={style} href="/reservation">
       {children}
-    </button>
+    </Link>
   );
 }

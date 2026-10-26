@@ -862,6 +862,33 @@ section {
   max-width: 65ch;
 }
 
+.faq-contact {
+  max-width: 560px;
+  margin: 48px auto 0;
+  padding: 28px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.faq-contact-title {
+  font-family: var(--font-fraunces), serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--bark);
+}
+
+.faq-contact-desc {
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+}
+
+.faq-contact .btn {
+  margin-top: 18px;
+}
+
 /* videos */
 #videos {
   padding-top: 0;
@@ -1325,6 +1352,45 @@ footer {
   color: var(--ink-soft);
   max-width: 62ch;
   font-size: 15.5px;
+}
+
+.journal-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.journal-preview-card {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 16px;
+  transition: border-color 0.15s ease;
+}
+
+.journal-preview-card:hover {
+  border-color: var(--clay);
+}
+
+.journal-preview-card .blog-card-title {
+  font-size: clamp(1.15rem, 1.6vw, 1.3rem);
+}
+
+.journal-preview-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+@media (max-width: 860px) {
+  .journal-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-preview-card:not(.is-featured) {
+    display: none;
+  }
 }
 
 .blog-card-meta {

@@ -3,8 +3,7 @@ import { IconGoogle, Stars } from "./icons";
 import ReviewsModal from "./ReviewsModal";
 
 const featured = reviews.filter((review) => review.featured);
-const rated = reviews.filter((review) => review.rating !== null);
-const average = rated.reduce((sum, review) => sum + (review.rating ?? 0), 0) / rated.length;
+const GOOGLE_RATING = 4.9;
 
 export default function Temoignages() {
   return (
@@ -17,9 +16,9 @@ export default function Temoignages() {
           <h2>Ils sont passés par la Maison</h2>
           <div className="reviews-score">
             <span className="reviews-score-number">
-              {average.toFixed(1).replace(".", ",")}/5
+              {GOOGLE_RATING.toFixed(1).replace(".", ",")}/5
             </span>
-            <Stars count={Math.round(average)} />
+            <Stars count={Math.round(GOOGLE_RATING)} />
             <span className="reviews-score-divider" aria-hidden="true" />
             <span className="reviews-score-google">
               <IconGoogle width={20} height={20} />
