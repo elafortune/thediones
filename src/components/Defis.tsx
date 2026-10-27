@@ -48,7 +48,7 @@ export default function Defis() {
           <span className="eyebrow" style={{ color: "#e0a81f" }}>
             Vous vous reconnaissez peut-être
           </span>
-          <h2>Ce que beaucoup de couples n&apos;osent pas dire</h2>
+          <h2>Ce que beaucoup n&apos;osent pas dire</h2>
           <p className="lede defis-lede">
             Nous ne recevons pas que des couples en crise ouverte. Voici ce
             que nous entendons le plus souvent, sous des formes différentes,

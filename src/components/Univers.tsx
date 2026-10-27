@@ -33,7 +33,7 @@ export default function Univers() {
           <span className="eyebrow" style={{ color: "var(--forest)" }}>
             L&apos;univers
           </span>
-          <h2>Tout ce que The Dione&apos;s vous propose</h2>
+          <h2>Maison Dione</h2>
         </div>
         <div className="univers-grid">
           {cards.map((card) => (

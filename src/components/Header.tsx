@@ -9,6 +9,7 @@ export default function Header() {
       <div className="wrap nav-row">
         <Link className="logo" href="/#top">
           The Dione&apos;s
+          <span className="logo-sub">Maison de conseil relationnel</span>
         </Link>
         <div className="nav-right">
           <nav className="links">

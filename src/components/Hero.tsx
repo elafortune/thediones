@@ -14,16 +14,19 @@ export default function Hero() {
         />
       </div>
       <div className="wrap hero-content">
-        <span className="eyebrow hero-eyebrow">The Dione&apos;s</span>
+        <span className="eyebrow hero-eyebrow">
+          THE DIONE&apos;S - MAISON DE CONSEIL RELATIONNEL
+        </span>
         <h1>
-          Culture. Famille.
+          Couple, Relations,
           <br />
-          Lifestyle. Business.
+          Famille, Choix
         </h1>
         <p className="lede">
-          Un couple, un cabinet, un univers : celui de la vie à deux qui
-          dure. Des séances de conseil conjugal et familial, un journal pour
-          nourrir votre relation, une lettre pour ne rien manquer.
+          Chez les Dione, nous vous accueillons dans un espace d&apos;écoute
+          et d&apos;échange, sans jugement ni modèle à suivre. Un temps pour
+          parler de ce que vous vivez, prendre du recul et explorer les
+          possibilités qui s&apos;offrent à vous.
         </p>
         <div className="hero-ctas">
           <a className="btn btn-clay" href="#seances">

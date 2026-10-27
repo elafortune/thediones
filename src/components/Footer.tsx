@@ -6,8 +6,8 @@ export default function Footer() {
     <footer id="lettre">
       <div className="wrap">
         <p className="foot-tagline italic">
-          « Culture, famille, lifestyle, business : l&apos;univers The
-          Dione&apos;s. »
+          « Un espace pour parler de soi et des liens qui nous unissent aux
+          autres. »
         </p>
         <div className="foot-grid">
           <div>

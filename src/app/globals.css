@@ -166,11 +166,24 @@ header {
 }
 
 .logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
   font-family: var(--font-fraunces), serif;
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--bark);
   text-decoration: none;
+}
+
+.logo-sub {
+  font-family: var(--font-karla), sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 nav.links {
